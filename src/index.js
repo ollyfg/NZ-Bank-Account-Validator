@@ -46,9 +46,9 @@ export default {
     // long enough, manually forge an array.
     if (parts.length === 1) {
       parts[0] = str.slice(0, 2);
-      parts[1] = str.slice(2, 5);
-      parts[2] = str.slice(5, 12);
-      parts[3] = str.slice(12);
+      parts[1] = str.slice(2, 6);
+      parts[2] = str.slice(6, 13);
+      parts[3] = str.slice(13);
     }
 
     return parts.filter(i => i.length);

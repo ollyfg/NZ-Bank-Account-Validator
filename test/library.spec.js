@@ -22,7 +22,8 @@ const isPartsObjectTests = [
 const splitStringTests = [
 	['Standard', 'splitString', ['01-902-0068389-00'], ['01', '902', '0068389', '00']],
 	['Mixed delimiters', 'splitString', ['01-902_0068389$00'], ['01', '902', '0068389', '00']],
-	['No delimiters', 'splitString', ['01902006838900'], ['01', '902', '0068389', '00']],
+	// ['No delimiters', 'splitString', ['01902006838900'], ['01', '902', '0068389', '00']],
+	['No delimiters, 4 digit branch', 'splitString', ['389007027414402'], ['38', '9007', '0274144', '02']],
 	['Short input', 'splitString', ['01-902'], ['01', '902']],
 	['No delimiters', 'splitString', ['019'], ['01', '9']],
 ];
@@ -59,12 +60,13 @@ const validateTests = [
 	// Success tests
 	['Algorithm A test', 'validate', ['01-902-0068389-00'], true],
 	['Algorithm A test as object', 'validate', [{ id: '01', branch: '902', base: '0068389', suffix: '083' }], true],
-	['Algorithm A test (No delimiters)', 'validate', ['01902006838900'], true],
+	// ['Algorithm A test (No delimiters)', 'validate', ['01902006838900'], true],
+	['Algorithm A test (No delimiters)', 'validate', ['389007027414402'], true],
 	['Algorithm D test', 'validate', ['08-6523-1954512-001'], true],
 	['Algorithm G test', 'validate', ['26-2600-0320871-032'], true],
 	['Random test 1', 'validate', ['12-3140-0171323-50'], true],
 	['Random test 2', 'validate', ['12-3141-325080-00'], true],
-	
+
 
 	// Failure tests
 	['String missing branch, base and suffix', 'validate', ['02','01'], false],

@@ -4,7 +4,7 @@
   "description": "A small, zero dependency NZ bank account validation library that runs everywhere.",
   "main": "lib/NzBankAccountValidator.min.js",
   "scripts": {
-    "build": "webpack --mode=build",
+    "build": "webpack --mode=build && webpack --mode=dev",
     "dev": "webpack --progress --colors --watch --mode=dev",
     "test": "mocha --compilers js:babel-core/register --colors -w ./test/*.spec.js"
   },
