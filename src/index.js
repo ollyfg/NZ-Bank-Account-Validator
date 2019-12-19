@@ -101,8 +101,7 @@ export default {
 
     // VALIDATION - STEP 1
     /*
-      https://web.archive.org/web/20181009211542/https://www.ird.govt.nz/resources/9/d/9d739cde-ad76-4c49-ae08
-      -522c62d94dd6/rwt-nrwt-spec-2016.pdf (PAGE 10)
+      https://www.ird.govt.nz/-/media/Project/IR/PDF/2020RWTNRWTSpecificationDocumentv10.pdf (PAGE 15)
     */
 
     const bankData = this.getBankData(id, branch);
@@ -115,8 +114,7 @@ export default {
 
     // VALIDATION - STEP 2
     /*
-      https://web.archive.org/web/20181009211542/https://www.ird.govt.nz/resources/9/d/9d739cde-ad76-4c49-ae08
-      -522c62d94dd6/rwt-nrwt-spec-2016.pdf (PAGE 11)
+      https://www.ird.govt.nz/-/media/Project/IR/PDF/2020RWTNRWTSpecificationDocumentv10.pdf (PAGE 16)
     */
 
     const { weighting, modulo, specialCase } = algorithm;
