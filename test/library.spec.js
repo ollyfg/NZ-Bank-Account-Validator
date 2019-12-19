@@ -59,6 +59,7 @@ const partsObjectValidTests = [
 const validateTests = [
 	// Success tests
 	['Algorithm A test', 'validate', ['01-902-0068389-00'], true],
+	['Algorithm A test', 'validate', ['04-2021-0057523-39'], true],
 	['Algorithm A test as object', 'validate', [{ id: '01', branch: '902', base: '0068389', suffix: '083' }], true],
 	// ['Algorithm A test (No delimiters)', 'validate', ['01902006838900'], true],
 	['Algorithm A test (No delimiters)', 'validate', ['389007027414402'], true],
